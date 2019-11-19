@@ -46,7 +46,7 @@ When in app change hash location with delay (setTimeout) test will leave current
 
 ## Desired behavior:
 
-When in app change hash location with delay (setTimeout) test will stay on current page. In my case http://localhost:8080/index.htm#/some/route/1
+When in app change hash location with delay (setTimeout) test will stay on current page. In my case http://localhost:8080/index.html#/some/route/1
 
 Do not want to see any error.
 
