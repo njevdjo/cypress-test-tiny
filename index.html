@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cy issue</title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <div id="my-link">CLICK ME</div>
+    <script>
+        document.getElementById("my-link").addEventListener("click", () => {
+            // Examples
+            // - This can be login with ajax and redirect to home page .
+            // - In SPA app add new item with ajax and redirect to detail page.
+            // or use any async redirection
+            // Many SPA routers uses similar approach
+            setTimeout(() => window.location.href = "#/some/route/1", 500)
+        })
+    </script>
+</body>
+
+</html>

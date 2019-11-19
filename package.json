@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "Small project for quickly testing Cypress.io test runner",
   "scripts": {
+    "start-app": "node app.js",
+    "start-app-and-test": "start-server-and-test start-app http://localhost:8080 cypress:run",
+    "start-app-and-test-unsecure": "start-server-and-test start-app http://localhost:8080 cypress:run-unsecure",
     "cypress:run": "cypress run",
+    "cypress:run-unsecure": "cypress run --config chromeWebSecurity=false",
     "cypress:open": "cypress open",
+    "cypress:open-unsecure": "cypress open --config chromeWebSecurity=false",
     "cypress:verify": "cypress verify",
     "cypress:version": "cypress version",
     "list-videos": "ls -l cypress/videos",
@@ -15,7 +20,9 @@
   "author": "Gleb Bahmutov <gleb@cypress.io>",
   "license": "ISC",
   "devDependencies": {
-    "ok-file": "1.4.0"
+    "cypress": "3.6.1",
+    "ok-file": "1.4.0",
+    "start-server-and-test": "^1.10.6"
   },
   "repository": {
     "type": "git",
