@@ -20,12 +20,14 @@
   "author": "Gleb Bahmutov <gleb@cypress.io>",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "3.6.1",
     "ok-file": "1.4.0",
     "start-server-and-test": "^1.10.6"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/cypress-io/cypress-test-tiny.git"
+  },
+  "dependencies": {
+    "cypress": "4.0.2"
   }
 }

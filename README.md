@@ -9,6 +9,8 @@ Examples
 
 Many SPA routers uses similar approach
 
+To install run ```npm install```
+
 # Run app on port 8080 and test
 
 ```
